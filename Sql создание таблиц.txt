@@ -1,0 +1,19 @@
+Таблица Пациентов
+CREATE TABLE [dbo].[Patients] (
+    [Id]          VARCHAR (36)  NOT NULL,
+    [Surname]     NVARCHAR (50) NOT NULL,
+    [Name]        NVARCHAR (50) NOT NULL,
+    [Patronymic]  NVARCHAR (50) NOT NULL,
+    [Birthday]    DATE          NOT NULL,
+    [PhoneNumber] VARCHAR (15)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+Таблица Посещений
+CREATE TABLE [dbo].[Visits] (
+    [Id]        VARCHAR (36)  NOT NULL,
+    [Date]      DATE          NOT NULL,
+    [Diagnosis] NVARCHAR (36) NOT NULL,
+    [CodeMKB10] VARCHAR (36)  NOT NULL,
+    [PatientId] VARCHAR (36)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
