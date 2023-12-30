@@ -16,7 +16,7 @@ using OfficeOpenXml;
 
 namespace Patients
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private string mkb10Path = "D:\\C++ projects\\Subjects\\Subjects\\bin\\Debug\\mkb10.xlsx";
         private BindingList<MkbItem> mkb10List = null;
